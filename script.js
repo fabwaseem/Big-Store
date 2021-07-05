@@ -21,14 +21,6 @@ window.addEventListener("scroll", () => {
 })
 
 
-const filterBtn = document.querySelector('.filter-btn')
-const filterTab = document.querySelector('.filter-tab')
-
-// filterBtn.addEventListener('click', () =>{
-// console.log('ys')
-// filterTab.classList.toggle ('view')
-
-// })
 
 
 const thumbnails = document.querySelectorAll('.thumbnails img')
@@ -43,3 +35,27 @@ var i;
         })
     })
 
+
+const registerBtn = document.querySelector('.register-btn')
+const loginBtn = document.querySelector('.login-btn')
+
+
+const registerSection = document.querySelector('.register')
+const loginSection = document.querySelector('.login')
+
+
+
+registerBtn.addEventListener('click',() =>{
+
+    console.log("yes")
+registerSection.classList.toggle('shown')
+loginSection.classList.toggle('hidden')
+
+})
+loginBtn.addEventListener('click',() =>{
+
+    console.log("yes")
+registerSection.classList.toggle('shown')
+loginSection.classList.toggle('hidden')
+
+})
