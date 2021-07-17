@@ -4,290 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Big Store</title>
+    <title>Music Player</title>
 </head>
 <body>
-    <!-- Navbar Start -->
-
+    
+  <video id="bgvideo" >
+    <source src="media/Rounded.mp4" >
+  </video>
     <div class="container">
-        <nav class="navbar">
-            <a href="index.html"><h1 class="logo">Big <span>Store</span></h1></a>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html" >About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="account.html" >Account</a></li>
-                <li><a href="cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
-            </ul>
-            <div class="hamBtn" id="hamBtn">
-                <span></span>
-                <span></span> 
-                <span></span>
-            </div>
-        </nav>
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Summer Special Shoes</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit aliquam rerum nam quaerat.</p>
-                <button class="btn">Buy Now</button>
-            </div>
-        <img src="images/shoes.png" alt="">
+      
+      <div class="player">
+        <img src="media/covers/cheap.jpg" id="cover">
+        <div class="details">
+          <h1 id="song">Cheap Thrills</h1>
+          <p id="artist">Sia</p>
+          <div id="waveform"></div>
+          <div class="controls">
+            <img src="media/prev.png" id="prev">
+            <img src="media/play.png" id="play">
+            <img src="media/volume.png" id="mute">
+            <img src="media/next.png" id="next">
+          </div>
         </div>
+      </div>
+
+      <div class="shortkeys">
+        <p>Space : Play/Pause</p>
+        <p>M : Mute</p>
+        <p>Right Arrow : Next Song</p>
+        <p>Left Arrow : Prev Song</p>
+      </div>
     </div>
 
-    <!-- Navbar End -->
-
-
-    <!-- Section 1 -->
-
-        <section class="section featured">
-            <h1 class="section-heading">Featured Products</h1>
-               <div class="section-content">
-                <div class="box">
-                    <div class="img-container">
-                        <a href="productdetails.html">
-                    <img src="images/product-1.jpg" alt="">
-                    </a>
-                    </div>
-                    <button class="btn">Buy Now</button>
-                    <h3>Red Shirt</h3>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <p>&10.00</p>
-                </div>
-                <div class="box">
-                    <div class="img-container">
-                    <img src="images/product-2.jpg" alt="">
-                    </div>
-                    <button class="btn">Buy Now</button>
-                    <h3>Red Shirt</h3>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <p>&10.00</p>
-                </div>
-                <div class="box">
-                    <div class="img-container">
-                    <img src="images/product-3.jpg" alt="">
-                    </div>
-                    <button class="btn">Buy Now</button>
-                    <h3>Red Shirt</h3>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <p>&10.00</p>
-                </div>
-                <div class="box">
-                    <div class="img-container">
-                    <img src="images/product-4.jpg" alt="">
-                    </div>
-                    <button class="btn">Buy Now</button>
-                    <h3>Red Shirt</h3>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <p>&10.00</p>
-                </div>
-               </div>
-        </section>
-
-    <!-- Section 1 -->
-
-
-    <!-- Section 2 -->
-
-        <section class="section latest">
-            <h1 class="section-heading">Latest Products</h1>
-               <div class="section-content">
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-5.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-6.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-7.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-8.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-9.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-10.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-11.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-                    <div class="box">
-                        <div class="img-container">
-                        <img src="images/product-12.jpg" alt="">
-                        </div>
-                        <button class="btn">Buy Now</button>
-                        <h3>Red Shirt</h3>
-                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <p>&10.00</p>
-                    </div>
-        </section>
-
-    <!-- Section 2 -->
-
-    <!-- Section 3 -->
-
-        <section class="section popular">
-            <div class="hero">
-             <img src="images/exclusive.png" alt="">
-            <div class="hero-text">
-                <p>Exclusive item on sale...</p>
-                <h1>New Smart Phone Watch</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit aliquam rerum nam quaerat.</p>
-                <button class="btn">Buy Now</button>
-            </div>
-        </div>
-        </section>
-
-    <!-- Section 3 -->
-
-
-    <!-- Section 4 -->
-
-        <section class="section latest testimonial">
-            <h1 class="section-heading">Testimonial</h1>
-               <div class="section-content">
-                <div class="box">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum velit facere molestiae molestias placeat perferendis laudantium neque explicabo odio, eos fugiat, eveniet doloribus officiis culpa.</p>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <img src="images/user-1.png" alt="">
-                    <p>Alexa Robert</p>
-                </div>
-                <div class="box">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum velit facere molestiae molestias placeat perferendis laudantium neque explicabo odio, eos fugiat, eveniet doloribus officiis culpa.</p>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <img src="images/user-2.png" alt="">
-                    <p>John Doe</p>
-                </div>
-                <div class="box">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum velit facere molestiae molestias placeat perferendis laudantium neque explicabo odio, eos fugiat, eveniet doloribus officiis culpa.</p>
-                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <img src="images/user-3.png" alt="">
-                    <p>Alexa Robert</p>
-                </div>
-               </div>
-        </section>
-
-    <!-- Section 4 -->
-
-    <!-- Section 5 -->
-
-        
-    <section class="section latest partners">
-           <div class="partners-logo">
-               <img src="images/pa1.png" alt="">
-               <img src="images/pa2.png" alt="">
-               <img src="images/pa3.png" alt="">
-               <img src="images/pa4.png" alt="">
-               <img src="images/pa5.png" alt="">
-               </div>
-    </section>
-
-    <!-- Section 5 -->
-
-    <!-- Footer Start -->
-
-        <footer>
-            <div class="content">
-                <div>
-                    <h1 class="logo">Big <span>Store</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut distinctio nobis eligendi praesentium dolorum.</p>
-                    <div class="icons">
-                        <a href="https://www.facebook.com/fabwaseem" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/fabwaseem" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://www.twitter.com/fabwaseem" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.github.com/fabwaseem" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                        </div>
-                </div>
-                <div>
-                    <h2>Download Our App</h2>
-                    <p>Download our app form playstore or appstore</p>
-                    <img src="images/play-store.png" alt="Download Big Store App">
-                    <img src="images/app-store.png" alt="Download Big Store App">
-                </div>
-                <div>
-                    <h2>Useful Links</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Account</h2>
-                    <ul>
-                    <li><a href="account.html">Login</a></li>
-                    <li><a href="account.html">SignUp</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="credit">
-                <p>All rights reseved<i class="fa fa-copyright" aria-hidden="true"></i> 2021, Big <span>Store</span></p>
-                <p>Designed with<i class="fa fa-heart" aria-hidden="true"></i> by Waseem <span>Anjum</span></p>
-            </div>
-        </footer>    
-    
-    <!-- Footer End -->
-
-
-    <!-- Script Start -->
-
-        <script src="script.js"></script>
-
-    <!-- Script End -->
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
